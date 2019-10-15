@@ -1,0 +1,25 @@
+name: gapminder_visualization
+description: An example Bokeh application (requires access to the internet).
+
+commands:
+  default:
+    bokeh_app: .
+
+downloads:
+  GAPMINDER_FERTILITY: https://s3.amazonaws.com/bokeh_data/gapminder_fertility.csv
+  GAPMINDER_POPULATION: https://s3.amazonaws.com/bokeh_data/gapminder_population.csv
+  GAPMINDER_LIFE_EXPECTANCY: https://s3.amazonaws.com/bokeh_data/gapminder_life_expectancy.csv
+  GAPMINDER_REGIONS: https://s3.amazonaws.com/bokeh_data/gapminder_regions.csv
+
+channels: []
+packages: []
+
+env_specs:
+  anaconda44_py35:
+    channels: []
+    packages:
+      - python=3.5
+      - bokeh=0.12.5
+      - tornado=4.5.1
+      - pandas=0.20.1
+      - ipykernel=4.6
